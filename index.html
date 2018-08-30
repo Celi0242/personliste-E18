@@ -39,9 +39,18 @@
 
             // løb personlisten igennem og lav en klon
 
-            let klon = temp.cloneNode(true).content;
-            klon.querySelector("h2").textContent =
+            personer.forEach(person => {
+                // lav en klon af template
+                let klon = temp.cloneNode(true).content;
+                // indsæt data i HTML
+                klon.querySelector("h2").textContent = person.navn;
+                klon.querySelector(".data-github").textContent = person.github;
 
+                // placer klon i HTML
+
+                modtager.appendChild(klon);
+
+            })
 
 
         }
