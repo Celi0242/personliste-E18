@@ -21,10 +21,11 @@
            <p class="data-alder"></p>
            <p class="data-civilstatus"></p>
            <p class="data-tlf"></p>
-           <p class="data-facebook"></p>
+           <a class="data-facebook" href=""></a>
            <p class="data-hobby"></p>
            <p class="data-sex"></p>
            <p class="data-billede"></p>
+           <img src="" alt="">
 
 
            </article>
@@ -65,7 +66,7 @@
                 klon.querySelector(".data-facebook").textContent = person.facebook;
                 klon.querySelector(".data-hobby").textContent = person.hobby;
                 klon.querySelector(".data-sex").textContent = person.sex;
-                klon.querySelector(".data-billede").textContent = person.billede;
+                klon.querySelector("img").src = person.billede;
 
                 // placer klon i HTML
 
@@ -75,6 +76,7 @@
 
 
         }
+
     </script>
 </body>
 
